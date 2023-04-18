@@ -65,7 +65,7 @@ namespace List
 
 		static void Main(string[] args)
         {
-			List<string> list = new List<string>();
+			/*List<string> list = new List<string>();
 
 			list.Add("1번 데이터");
 			list.Add("2번 데이터");
@@ -89,6 +89,23 @@ namespace List
 			list.Remove("3번 데이터");
 			list.Remove("2번 데이터");
 			Console.WriteLine(list.Capacity);
+
+			string? findValue = list.Find(x => x.Contains('4'));
+			int findIndex = list.FindIndex(x => x.Contains('1'));*/
+
+			DataStructure.List<string> list = new DataStructure.List<string>();
+
+			list.Add("1번 데이터");
+			list.Add("2번 데이터");
+			list.Add("3번 데이터");
+			list.Add("4번 데이터");
+			list.Add("5번 데이터");
+
+			list.Remove("2번 데이터");
+			list.RemoveAt(0);
+
+			list[0] = "첫번째 데이터";
+			string str = list[0];
 
 			string? findValue = list.Find(x => x.Contains('4'));
 			int findIndex = list.FindIndex(x => x.Contains('1'));
