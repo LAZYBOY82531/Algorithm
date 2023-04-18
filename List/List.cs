@@ -18,7 +18,6 @@ namespace DataStructure
             this.size = 0;
         }
 
-        public int Capacity { get { return } }
         public T this[int index]
         {
             get
@@ -33,6 +32,20 @@ namespace DataStructure
                     throw new ArgumentOutOfRangeException();
                 items[index] = value;
             }
+        }
+        public int Count()
+        {
+            return size+1;
+        }
+        public int Capacity()
+        {
+            return items.Length;
+        }
+        public void Clear()
+        {
+            T[] newItems = new T[DefaultCapacity];
+            items = newItems;
+            size = 0;
         }
 
         public void Add(T item)
