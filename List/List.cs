@@ -33,20 +33,6 @@ namespace DataStructure
                 items[index] = value;
             }
         }
-        public int Count()
-        {
-            return size+1;
-        }
-        public int Capacity()
-        {
-            return items.Length;
-        }
-        public void Clear()
-        {
-            T[] newItems = new T[DefaultCapacity];
-            items = newItems;
-            size = 0;
-        }
 
         public void Add(T item)
         {
@@ -79,7 +65,7 @@ namespace DataStructure
             if (index < 0 || index >= size)
                 throw new IndexOutOfRangeException();
             size--;
-            Array.Copy(items, index + 1, items, index, size - index);
+            Array.Copy(items, index + 1, items, index, size - 1);
         }
 
         public int IndexOf(T item)
