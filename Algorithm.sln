@@ -5,6 +5,8 @@ VisualStudioVersion = 17.2.32616.157
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Algorithm", "Algorithm\Algorithm.csproj", "{1B2C33C1-1764-4547-86D8-2CF7447BB134}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "List", "List\List.csproj", "{F031879F-9ABE-40F5-BBD6-C6E8CAFA8791}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +17,10 @@ Global
 		{1B2C33C1-1764-4547-86D8-2CF7447BB134}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{1B2C33C1-1764-4547-86D8-2CF7447BB134}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{1B2C33C1-1764-4547-86D8-2CF7447BB134}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F031879F-9ABE-40F5-BBD6-C6E8CAFA8791}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F031879F-9ABE-40F5-BBD6-C6E8CAFA8791}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F031879F-9ABE-40F5-BBD6-C6E8CAFA8791}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F031879F-9ABE-40F5-BBD6-C6E8CAFA8791}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
