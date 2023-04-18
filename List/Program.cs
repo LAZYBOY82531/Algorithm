@@ -88,6 +88,7 @@ namespace List
 
 			list.Remove("3번 데이터");
 			list.Remove("2번 데이터");
+			Console.WriteLine(list.Capacity);
 
 			string? findValue = list.Find(x => x.Contains('4'));
 			int findIndex = list.FindIndex(x => x.Contains('1'));
