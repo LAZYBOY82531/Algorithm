@@ -33,10 +33,8 @@ namespace List
                 items[index] = value;                //리스트에 저장할 값
             }
         }
-        public int Count()                           //리스트에 원소가 들어가 있는 갯수를 반환하는 함수
-        {
-            return size + 1;
-        }
+        public int Count { get { return size; } }                         //리스트에 원소가 들어가 있는 갯수를 반환하는 함수
+
         public int Capacity()                      //리스트의 실질적 값을 반환하는 함수
         {
             return items.Length;
